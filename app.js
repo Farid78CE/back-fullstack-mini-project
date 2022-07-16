@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-mongoose.connect("mongodb+srv://admin:admin@fullstackexpressvue.wskfn.mongodb.net/test", {useNewUrlParser: true});
+mongoose.connect("your mongo address", {useNewUrlParser: true});
 const database = mongoose.connection;
 
 database.on("error", (error)=> {
